@@ -23,13 +23,13 @@
     "url": "https://github.com/Creator-360/Covid-19-cases-overview.git"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "deploy": "react-scripts build && firebase.cmd deploy",
-    "electron": "react-scripts build && electron .",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
+    "deploy": "npm run build && firebase.cmd deploy",
+    "electron": "npm run build && electron .",
     "electron-only": "electron .",
-    "build-windows": "react-scripts build && electron-builder.cmd --win --x64 --publish=always"
+    "build-windows": "npm run build && electron-builder.cmd --win"
   },
   "build": {
     "productName": "Covid-19",
