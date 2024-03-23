@@ -6,10 +6,10 @@ import Home from "./landing_page/Home"
 function App() {
 
 
-  const NovelCOVID_API__All_Countries__today = "https://corona.lmao.ninja/v2/countries?yesterday=false&sort"
-  const NovelCOVID_API__All_Continents__today = "https://corona.lmao.ninja/v2/continents?yesterday=false&sort"
-  const NovelCOVID_API__All_Countries__yesterday = "https://corona.lmao.ninja/v2/countries?yesterday=true&sort"
-  const NovelCOVID_API__All_Continents__yesterday = "https://corona.lmao.ninja/v2/continents?yesterday=true&sort"
+  const NovelCOVID_API__All_Countries__today = "https://disease.sh/v3/covid-19/countries?yesterday=false&sort"
+  const NovelCOVID_API__All_Continents__today = "https://disease.sh/v3/covid-19/continents?yesterday=false&sort"
+  const NovelCOVID_API__All_Countries__yesterday = "https://disease.sh/v3/covid-19/countries?yesterday=true&sort"
+  const NovelCOVID_API__All_Continents__yesterday = "https://disease.sh/v3/covid-19/continents?yesterday=true&sort"
 
   const [All_Countries__today, set_All_Countries__today] = useState([])
   const [All_Countries__yesterday, set_All_Countries__yesterday] = useState([])
