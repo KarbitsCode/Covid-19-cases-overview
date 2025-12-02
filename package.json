@@ -58,6 +58,9 @@
       "last 1 safari version"
     ]
   },
+  "files": [
+    "**/*"
+  ],
   "devDependencies": {
     "electron": "^10.1.6",
     "electron-builder": "^22.9.1",
